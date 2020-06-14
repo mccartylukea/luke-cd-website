@@ -19,7 +19,7 @@ phases:
     commands:
       - rm -rf public
       - hugo
-      - aws s3 sync public/ s3://luke-cd-website/ --region us-east-2 --delete
+      - hugo deploy
   post_build:
     commands:
       - echo Build completed on `date`
