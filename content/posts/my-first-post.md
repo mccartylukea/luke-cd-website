@@ -6,5 +6,4 @@ draft: false
 
 This is my first post via Cloud9.
 
-This should auto-deploy.
-TEST
+This should auto-deploy.  (more content here)
