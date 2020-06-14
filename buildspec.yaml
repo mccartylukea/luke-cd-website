@@ -17,9 +17,9 @@ phases:
       - rm -rf /tmp/*
   build:
     commands:
-      - rm -rf public
       - hugo
       - hugo deploy
+      - rm -rf public
   post_build:
     commands:
       - echo Build completed on `date`
