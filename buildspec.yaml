@@ -17,8 +17,9 @@ phases:
       - rm -rf /tmp/*
   build:
     commands:
+      - cd ~/environment/quickstart/
       - rm -rf public
-      - hugo
+      - hugo 
       - aws s3 sync public/ s3://luke-cd-website/ --region us-east-2 --delete
       
   post_build:
